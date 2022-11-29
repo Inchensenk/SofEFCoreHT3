@@ -22,7 +22,7 @@ namespace SofEFCoreHT3
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=s-dev-01;Database=StudentsDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\\mssqllocaldb; Database=StudentsDB;Trusted_Connection=True;");
 
             optionsBuilder.LogTo(logStream.WriteLine, LogLevel.Trace);//запись лога в файл
         }

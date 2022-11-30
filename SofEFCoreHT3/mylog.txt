@@ -1,0 +1,1675 @@
+dbug: 30.11.2022 12:50:11.587 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 12:50:11.587 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 12:50:11.683 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 12:50:11.692 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 12:50:11.710 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (17ms).
+dbug: 30.11.2022 12:50:11.711 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:11.717 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:11.802 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      An error occurred using the connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:11.802 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:11.803 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      An error occurred using the connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:11.827 CoreEventId.RedundantIndexRemoved[10601] (Microsoft.EntityFrameworkCore.Model) 
+      The index {'CardsId'} was not created on entity type 'CardSubject (Dictionary<string, object>)' as the properties are already covered by the index {'CardsId', 'SubjectsId'}.
+dbug: 30.11.2022 12:50:11.835 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 12:50:11.835 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 12:50:11.848 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 12:50:11.848 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 30.11.2022 12:50:11.848 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:11.858 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:11.861 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:11.863 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 12:50:11.864 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 12:50:11.866 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [StudentsDBHT3];
+info: 30.11.2022 12:50:12.072 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (203ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [StudentsDBHT3];
+dbug: 30.11.2022 12:50:12.072 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.072 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.072 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.072 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [StudentsDBHT3] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+info: 30.11.2022 12:50:12.117 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [StudentsDBHT3] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+dbug: 30.11.2022 12:50:12.118 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.121 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'master' on server '(localdb)\MSSQLLocalDB' (2ms).
+dbug: 30.11.2022 12:50:12.123 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.123 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 30.11.2022 12:50:12.123 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.125 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.125 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.125 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.125 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.125 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 12:50:12.128 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 12:50:12.128 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.128 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB' (0ms).
+dbug: 30.11.2022 12:50:12.166 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.166 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.166 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.166 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.166 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.166 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+      );
+info: 30.11.2022 12:50:12.170 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+      );
+dbug: 30.11.2022 12:50:12.170 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.170 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB' (0ms).
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 12:50:12.171 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.171 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB' (0ms).
+dbug: 30.11.2022 12:50:12.173 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 12:50:12.173 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 12:50:12.173 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 12:50:12.173 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.173 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.174 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 12:50:12.182 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 12:50:12.182 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.183 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB' (0ms).
+dbug: 30.11.2022 12:50:12.183 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 30.11.2022 12:50:12.183 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 12:50:12.183 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 12:50:12.183 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.183 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.184 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 30.11.2022 12:50:12.185 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 30.11.2022 12:50:12.186 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.186 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 0ms reading results.
+dbug: 30.11.2022 12:50:12.186 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.186 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB' (0ms).
+info: 30.11.2022 12:50:12.192 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221129143828_InitMigration'.
+dbug: 30.11.2022 12:50:12.212 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.212 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 12:50:12.213 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 30.11.2022 12:50:12.217 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 30.11.2022 12:50:12.217 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.217 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.217 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.217 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Marks] (
+          [Id] int NOT NULL IDENTITY,
+          [MarkValue] float NOT NULL,
+          CONSTRAINT [PK_Marks] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 12:50:12.218 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Marks] (
+          [Id] int NOT NULL IDENTITY,
+          [MarkValue] float NOT NULL,
+          CONSTRAINT [PK_Marks] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 12:50:12.219 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.219 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.219 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.219 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Students] (
+          [Id] int NOT NULL IDENTITY,
+          [FirstName] nvarchar(50) NOT NULL,
+          [LastName] nvarchar(50) NOT NULL,
+          [BirthDate] datetime2 NOT NULL,
+          [PhoneNumber] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 12:50:12.220 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Students] (
+          [Id] int NOT NULL IDENTITY,
+          [FirstName] nvarchar(50) NOT NULL,
+          [LastName] nvarchar(50) NOT NULL,
+          [BirthDate] datetime2 NOT NULL,
+          [PhoneNumber] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Subjects] (
+          [Id] int NOT NULL IDENTITY,
+          [SubjectName] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Subjects] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 12:50:12.220 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Subjects] (
+          [Id] int NOT NULL IDENTITY,
+          [SubjectName] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Subjects] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.220 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Cards] (
+          [Id] int NOT NULL IDENTITY,
+          [SerialNumber] int NOT NULL,
+          CONSTRAINT [PK_Cards] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Cards_Students_SerialNumber] FOREIGN KEY ([SerialNumber]) REFERENCES [Students] ([Id]) ON DELETE CASCADE
+      );
+info: 30.11.2022 12:50:12.221 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Cards] (
+          [Id] int NOT NULL IDENTITY,
+          [SerialNumber] int NOT NULL,
+          CONSTRAINT [PK_Cards] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Cards_Students_SerialNumber] FOREIGN KEY ([SerialNumber]) REFERENCES [Students] ([Id]) ON DELETE CASCADE
+      );
+dbug: 30.11.2022 12:50:12.221 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.221 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.221 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.221 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CardSubject] (
+          [CardsId] int NOT NULL,
+          [SubjectsId] int NOT NULL,
+          CONSTRAINT [PK_CardSubject] PRIMARY KEY ([CardsId], [SubjectsId]),
+          CONSTRAINT [FK_CardSubject_Cards_CardsId] FOREIGN KEY ([CardsId]) REFERENCES [Cards] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_CardSubject_Subjects_SubjectsId] FOREIGN KEY ([SubjectsId]) REFERENCES [Subjects] ([Id]) ON DELETE CASCADE
+      );
+info: 30.11.2022 12:50:12.222 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CardSubject] (
+          [CardsId] int NOT NULL,
+          [SubjectsId] int NOT NULL,
+          CONSTRAINT [PK_CardSubject] PRIMARY KEY ([CardsId], [SubjectsId]),
+          CONSTRAINT [FK_CardSubject_Cards_CardsId] FOREIGN KEY ([CardsId]) REFERENCES [Cards] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_CardSubject_Subjects_SubjectsId] FOREIGN KEY ([SubjectsId]) REFERENCES [Subjects] ([Id]) ON DELETE CASCADE
+      );
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Cards_SerialNumber] ON [Cards] ([SerialNumber]);
+info: 30.11.2022 12:50:12.222 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Cards_SerialNumber] ON [Cards] ([SerialNumber]);
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.222 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_CardSubject_SubjectsId] ON [CardSubject] ([SubjectsId]);
+info: 30.11.2022 12:50:12.223 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_CardSubject_SubjectsId] ON [CardSubject] ([SubjectsId]);
+dbug: 30.11.2022 12:50:12.223 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 12:50:12.223 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 12:50:12.223 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCodbug: 30.11.2022 13:21:49.871 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:21:49.871 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:21:49.966 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 13:21:49.977 CoreEventId.RedundantIndexRemoved[10601] (Microsoft.EntityFrameworkCore.Model) 
+      The index {'CardsId'} was not created on entity type 'CardSubject (Dictionary<string, object>)' as the properties are already covered by the index {'CardsId', 'SubjectsId'}.
+dbug: 30.11.2022 13:21:49.984 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:21:49.985 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:21:50.038 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 13:21:50.058 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (20ms).
+dbug: 30.11.2022 13:21:50.059 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 13:21:50.135 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 13:21:50.138 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:21:50.140 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 13:21:50.141 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 13:21:50.143 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:21:50.153 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:21:50.154 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 13:21:50.156 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'master' on server '(localdb)\MSSQLLocalDB' (1ms).
+dbug: 30.11.2022 13:21:50.158 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 13:21:50.158 RelationalEventId.CommandCreated[20104] (Microsodbug: 30.11.2022 13:24:06.095 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:24:06.095 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:24:06.188 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 13:24:06.198 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 13:24:06.219 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (20ms).
+dbug: 30.11.2022 13:24:06.219 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.222 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.306 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.308 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.311 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 13:24:06.312 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 13:24:06.314 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:24:06.324 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:24:06.325 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.328 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (1ms).
+dbug: 30.11.2022 13:24:06.330 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 13:24:06.330 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 13:24:06.330 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 13:24:06.330 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.330 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.330 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 13:24:06.339 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.339 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:24:06.340 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:24:06.340 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.340 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:24:06.384 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.384 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.384 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.384 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.384 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.384 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+      );
+info: 30.11.2022 13:24:06.394 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+      );
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:24:06.394 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.394 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 13:24:06.395 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.395 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:24:06.396 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 30.11.2022 13:24:06.396 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 13:24:06.396 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 13:24:06.396 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.396 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.396 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 30.11.2022 13:24:06.397 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 30.11.2022 13:24:06.398 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.398 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'master' on server 's-dev-01' is being disposed after spending 0ms reading results.
+dbug: 30.11.2022 13:24:06.398 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.398 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (0ms).
+info: 30.11.2022 13:24:06.404 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221130102349_InitMigration'.
+dbug: 30.11.2022 13:24:06.423 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.423 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:24:06.424 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 30.11.2022 13:24:06.427 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 30.11.2022 13:24:06.427 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.427 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.427 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.427 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Marks] (
+          [Id] int NOT NULL IDENTITY,
+          [MarkValue] float NOT NULL,
+          CONSTRAINT [PK_Marks] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 13:24:06.428 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Marks] (
+          [Id] int NOT NULL IDENTITY,
+          [MarkValue] float NOT NULL,
+          CONSTRAINT [PK_Marks] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 13:24:06.429 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.429 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.429 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.429 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Students] (
+          [Id] int NOT NULL IDENTITY,
+          [FirstName] nvarchar(50) NOT NULL,
+          [LastName] nvarchar(50) NOT NULL,
+          [BirthDate] datetime2 NOT NULL,
+          [PhoneNumber] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 13:24:06.431 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Students] (
+          [Id] int NOT NULL IDENTITY,
+          [FirstName] nvarchar(50) NOT NULL,
+          [LastName] nvarchar(50) NOT NULL,
+          [BirthDate] datetime2 NOT NULL,
+          [PhoneNumber] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Subjects] (
+          [Id] int NOT NULL IDENTITY,
+          [SubjectName] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Subjects] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 13:24:06.431 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Subjects] (
+          [Id] int NOT NULL IDENTITY,
+          [SubjectName] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Subjects] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.431 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Cards] (
+          [Id] int NOT NULL IDENTITY,
+          [SerialNumber] int NOT NULL,
+          CONSTRAINT [PK_Cards] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Cards_Students_SerialNumber] FOREIGN KEY ([SerialNumber]) REFERENCES [Students] ([Id]) ON DELETE CASCADE
+      );
+info: 30.11.2022 13:24:06.433 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Cards] (
+          [Id] int NOT NULL IDENTITY,
+          [SerialNumber] int NOT NULL,
+          CONSTRAINT [PK_Cards] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Cards_Students_SerialNumber] FOREIGN KEY ([SerialNumber]) REFERENCES [Students] ([Id]) ON DELETE CASCADE
+      );
+dbug: 30.11.2022 13:24:06.433 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.433 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.433 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.467 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CardSubject] (
+          [CardsId] int NOT NULL,
+          [SubjectsId] int NOT NULL,
+          CONSTRAINT [PK_CardSubject] PRIMARY KEY ([CardsId], [SubjectsId]),
+          CONSTRAINT [FK_CardSubject_Cards_CardsId] FOREIGN KEY ([CardsId]) REFERENCES [Cards] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_CardSubject_Subjects_SubjectsId] FOREIGN KEY ([SubjectsId]) REFERENCES [Subjects] ([Id]) ON DELETE CASCADE
+      );
+info: 30.11.2022 13:24:06.468 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CardSubject] (
+          [CardsId] int NOT NULL,
+          [SubjectsId] int NOT NULL,
+          CONSTRAINT [PK_CardSubject] PRIMARY KEY ([CardsId], [SubjectsId]),
+          CONSTRAINT [FK_CardSubject_Cards_CardsId] FOREIGN KEY ([CardsId]) REFERENCES [Cards] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_CardSubject_Subjects_SubjectsId] FOREIGN KEY ([SubjectsId]) REFERENCES [Subjects] ([Id]) ON DELETE CASCADE
+      );
+dbug: 30.11.2022 13:24:06.468 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:24:06.468 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.468 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:24:06.468 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Cards_SerialNumber] ON [Cards] ([SerialNumber]);
+info: 30.11.2022 13:24:06.470 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Cards_SerialNumber] ON [Cards] ([SerialNumber]);
+dbug: 30.11.2022 13:24:06.470 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Credbug: 30.11.2022 13:25:23.658 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:25:23.658 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:25:23.745 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 13:25:23.756 CoreEventId.RedundantIndexRemoved[10601] (Microsoft.EntityFrameworkCore.Model) 
+      The index {'CardsId'} was not created on entity type 'CardSubject (Dictionary<string, object>)' as the properties are already covered by the index {'CardsId', 'SubjectsId'}.
+dbug: 30.11.2022 13:25:23.764 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:25:23.764 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:25:23.814 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 13:25:23.833 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (20ms).
+dbug: 30.11.2022 13:25:23.835 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 's-dev-01'.
+dbug: 30.11.2022 13:25:23.913 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:25:23.916 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:25:23.919 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 13:25:23.919 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 13:25:23.921 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:25:23.931 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:25:23.932 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:25:23.935 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 's-dev-01' (1ms).
+dbug: 30.11.2022 13:25:23.937 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 13:25:23.937 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand fdbug: 30.11.2022 13:31:05.994 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:31:05.994 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:31:06.083 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 13:31:06.094 CoreEventId.RedundantIndexRemoved[10601] (Microsoft.EntityFrameworkCore.Model) 
+      The index {'CardsId'} was not created on entity type 'CardSubject (Dictionary<string, object>)' as the properties are already covered by the index {'CardsId', 'SubjectsId'}.
+dbug: 30.11.2022 13:31:06.103 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:31:06.103 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:31:06.181 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 13:31:06.199 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (18ms).
+dbug: 30.11.2022 13:31:06.200 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 13:31:06.949 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 13:31:06.952 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:31:06.955 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 13:31:06.955 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 13:31:06.958 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:31:06.968 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:31:06.969 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB'.
+dbug: 30.11.2022 13:31:06.972 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsDBHT3' on server '(localdb)\MSSQLLocalDB' (1ms).
+dbug: 30.11.2022 13:31:06.974 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 13:31:06.974 RelationalEventId.Codbug: 30.11.2022 13:54:11.250 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:54:11.250 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:54:11.340 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 13:54:11.350 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 13:54:11.375 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (25ms).
+dbug: 30.11.2022 13:54:11.376 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.379 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.464 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      An error occurred using the connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.464 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.464 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      An error occurred using the connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.482 CoreEventId.RedundantIndexRemoved[10601] (Microsoft.EntityFrameworkCore.Model) 
+      The index {'CardsId'} was not created on entity type 'CardSubject (Dictionary<string, object>)' as the properties are already covered by the index {'CardsId', 'SubjectsId'}.
+dbug: 30.11.2022 13:54:11.490 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:54:11.490 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 13:54:11.502 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 13:54:11.502 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 30.11.2022 13:54:11.502 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.510 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.513 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.515 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 13:54:11.516 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 13:54:11.518 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [StudentsHT3];
+info: 30.11.2022 13:54:11.750 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (230ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [StudentsHT3];
+dbug: 30.11.2022 13:54:11.751 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.751 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.751 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.751 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [StudentsHT3] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+info: 30.11.2022 13:54:11.805 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [StudentsHT3] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+dbug: 30.11.2022 13:54:11.806 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.812 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'master' on server 's-dev-01' (3ms).
+dbug: 30.11.2022 13:54:11.815 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'master' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.816 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 30.11.2022 13:54:11.816 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.818 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.818 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.818 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.818 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.819 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:54:11.824 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:54:11.824 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.824 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:54:11.861 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.861 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.861 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.861 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.861 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.861 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+      );
+info: 30.11.2022 13:54:11.866 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+      );
+dbug: 30.11.2022 13:54:11.866 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.866 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:54:11.866 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.866 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.867 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.867 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.867 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.867 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 13:54:11.867 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 13:54:11.867 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.867 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:54:11.869 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 13:54:11.869 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 13:54:11.869 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 13:54:11.869 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.869 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.869 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 13:54:11.877 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 13:54:11.877 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.878 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 13:54:11.878 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 30.11.2022 13:54:11.878 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 13:54:11.878 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 13:54:11.878 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.878 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.878 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 30.11.2022 13:54:11.880 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 30.11.2022 13:54:11.881 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.881 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'StudentsHT3' on server 's-dev-01' is being disposed after spending 0ms reading results.
+dbug: 30.11.2022 13:54:11.881 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.881 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+info: 30.11.2022 13:54:11.887 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221130105054_InitMigration'.
+dbug: 30.11.2022 13:54:11.907 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.907 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 13:54:11.908 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 30.11.2022 13:54:11.911 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 30.11.2022 13:54:11.911 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.911 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.912 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.912 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Marks] (
+          [Id] int NOT NULL IDENTITY,
+          [MarkValue] float NOT NULL,
+          CONSTRAINT [PK_Marks] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 13:54:11.912 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Marks] (
+          [Id] int NOT NULL IDENTITY,
+          [MarkValue] float NOT NULL,
+          CONSTRAINT [PK_Marks] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 13:54:11.913 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.913 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.913 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.913 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Students] (
+          [Id] int NOT NULL IDENTITY,
+          [FirstName] nvarchar(50) NOT NULL,
+          [LastName] nvarchar(50) NOT NULL,
+          [BirthDate] datetime2 NOT NULL,
+          [PhoneNumber] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 13:54:11.914 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Students] (
+          [Id] int NOT NULL IDENTITY,
+          [FirstName] nvarchar(50) NOT NULL,
+          [LastName] nvarchar(50) NOT NULL,
+          [BirthDate] datetime2 NOT NULL,
+          [PhoneNumber] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 13:54:11.914 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.914 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.914 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.914 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Subjects] (
+          [Id] int NOT NULL IDENTITY,
+          [SubjectName] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Subjects] PRIMARY KEY ([Id])
+      );
+info: 30.11.2022 13:54:11.915 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Subjects] (
+          [Id] int NOT NULL IDENTITY,
+          [SubjectName] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Subjects] PRIMARY KEY ([Id])
+      );
+dbug: 30.11.2022 13:54:11.915 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.915 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.915 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.915 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Cards] (
+          [Id] int NOT NULL IDENTITY,
+          [SerialNumber] int NOT NULL,
+          CONSTRAINT [PK_Cards] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Cards_Students_SerialNumber] FOREIGN KEY ([SerialNumber]) REFERENCES [Students] ([Id]) ON DELETE CASCADE
+      );
+info: 30.11.2022 13:54:11.916 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Cards] (
+          [Id] int NOT NULL IDENTITY,
+          [SerialNumber] int NOT NULL,
+          CONSTRAINT [PK_Cards] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Cards_Students_SerialNumber] FOREIGN KEY ([SerialNumber]) REFERENCES [Students] ([Id]) ON DELETE CASCADE
+      );
+dbug: 30.11.2022 13:54:11.916 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.916 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.916 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.933 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CardSubject] (
+          [CardsId] int NOT NULL,
+          [SubjectsId] int NOT NULL,
+          CONSTRAINT [PK_CardSubject] PRIMARY KEY ([CardsId], [SubjectsId]),
+          CONSTRAINT [FK_CardSubject_Cards_CardsId] FOREIGN KEY ([CardsId]) REFERENCES [Cards] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_CardSubject_Subjects_SubjectsId] FOREIGN KEY ([SubjectsId]) REFERENCES [Subjects] ([Id]) ON DELETE CASCADE
+      );
+info: 30.11.2022 13:54:11.934 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CardSubject] (
+          [CardsId] int NOT NULL,
+          [SubjectsId] int NOT NULL,
+          CONSTRAINT [PK_CardSubject] PRIMARY KEY ([CardsId], [SubjectsId]),
+          CONSTRAINT [FK_CardSubject_Cards_CardsId] FOREIGN KEY ([CardsId]) REFERENCES [Cards] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_CardSubject_Subjects_SubjectsId] FOREIGN KEY ([SubjectsId]) REFERENCES [Subjects] ([Id]) ON DELETE CASCADE
+      );
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Cards_SerialNumber] ON [Cards] ([SerialNumber]);
+info: 30.11.2022 13:54:11.934 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Cards_SerialNumber] ON [Cards] ([SerialNumber]);
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.934 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_CardSubject_SubjectsId] ON [CardSubject] ([SubjectsId]);
+info: 30.11.2022 13:54:11.935 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_CardSubject_SubjectsId] ON [CardSubject] ([SubjectsId]);
+dbug: 30.11.2022 13:54:11.935 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 13:54:11.935 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.935 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 13:54:11.935 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20221130105054_InitMigration', N'7.0.0');
+info: 30.11.2022 13:54:11.936 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parametedbug: 30.11.2022 15:45:26.307 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 15:45:26.307 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 15:45:26.395 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 15:45:26.405 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 15:45:26.425 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (20ms).
+dbug: 30.11.2022 15:45:26.426 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.428 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.510 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.512 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 15:45:26.515 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 15:45:26.515 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 15:45:26.518 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 15:45:26.527 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 15:45:26.528 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.531 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (1ms).
+dbug: 30.11.2022 15:45:26.533 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 15:45:26.533 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:45:26.533 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:45:26.533 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.534 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.534 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 15:45:26.542 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 15:45:26.542 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.543 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 15:45:26.543 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.543 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.543 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 15:45:26.543 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 15:45:26.543 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 15:45:26.543 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 15:45:26.544 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 15:45:26.544 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.544 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 15:45:26.550 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 30.11.2022 15:45:26.550 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 15:45:26.550 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 15:45:26.550 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.550 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.550 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 30.11.2022 15:45:26.551 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 30.11.2022 15:45:26.552 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.552 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'StudentsHT3' on server 's-dev-01' is being disposed after spending 0ms reading results.
+dbug: 30.11.2022 15:45:26.552 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.552 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+info: 30.11.2022 15:45:26.559 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221130124454_AddMarkValueInMarksTable'.
+dbug: 30.11.2022 15:45:26.586 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 17 update commands as a batch.
+dbug: 30.11.2022 15:45:26.592 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.592 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:45:26.593 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 30.11.2022 15:45:26.595 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 30.11.2022 15:45:26.596 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Comdbug: 30.11.2022 15:58:16.174 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 15:58:16.174 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 15:58:16.262 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 15:58:16.272 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 15:58:16.292 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (20ms).
+dbug: 30.11.2022 15:58:16.293 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.296 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.375 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.378 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 15:58:16.381 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 15:58:16.381 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 15:58:16.384 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 15:58:16.394 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 15:58:16.394 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.397 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (1ms).
+dbug: 30.11.2022 15:58:16.400 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 15:58:16.400 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:58:16.400 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:58:16.400 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.400 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.400 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 15:58:16.408 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 15:58:16.408 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.409 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 15:58:16.409 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.409 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.409 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 15:58:16.409 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 15:58:16.409 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 15:58:16.409 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 15:58:16.410 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 15:58:16.410 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.410 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 15:58:16.416 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 30.11.2022 15:58:16.416 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 15:58:16.416 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 15:58:16.416 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.416 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.416 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 30.11.2022 15:58:16.417 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 30.11.2022 15:58:16.419 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.419 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'StudentsHT3' on server 's-dev-01' is being disposed after spending 1ms reading results.
+dbug: 30.11.2022 15:58:16.419 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.419 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+info: 30.11.2022 15:58:16.425 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221130125750_AddSubjectNameInSubjectsTable'.
+dbug: 30.11.2022 15:58:16.453 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 3 update commands as a batch.
+dbug: 30.11.2022 15:58:16.457 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.457 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 15:58:16.458 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 30.11.2022 15:58:16.461 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 30.11.2022 15:58:16.461 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Databasedbug: 30.11.2022 16:24:57.007 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 16:24:57.007 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 16:24:57.095 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 16:24:57.105 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 16:24:57.126 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (21ms).
+dbug: 30.11.2022 16:24:57.127 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.130 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.209 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.211 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 16:24:57.214 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 16:24:57.214 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 16:24:57.217 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 16:24:57.226 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 16:24:57.227 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.230 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (1ms).
+dbug: 30.11.2022 16:24:57.232 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 16:24:57.232 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:24:57.232 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:24:57.232 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.232 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.233 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 16:24:57.241 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 16:24:57.241 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.241 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 16:24:57.242 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.242 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.242 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 16:24:57.242 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:24:57.242 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:24:57.242 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 16:24:57.243 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 16:24:57.243 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.243 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 16:24:57.249 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 30.11.2022 16:24:57.249 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 16:24:57.249 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 16:24:57.249 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.249 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.249 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 30.11.2022 16:24:57.250 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 30.11.2022 16:24:57.251 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.251 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'StudentsHT3' on server 's-dev-01' is being disposed after spending 0ms reading results.
+dbug: 30.11.2022 16:24:57.251 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.251 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+info: 30.11.2022 16:24:57.257 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221130132411_MaxLengthOfThePhoneNumber'.
+dbug: 30.11.2022 16:24:57.283 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.283 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:24:57.284 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 30.11.2022 16:24:57.287 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 30.11.2022 16:24:57.287 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 16:24:57.287 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Databasedbug: 30.11.2022 16:41:02.299 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).CardsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 16:41:02.299 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'CardSubject (Dictionary<string, object>).SubjectsId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 30.11.2022 16:41:02.393 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.0 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+dbug: 30.11.2022 16:41:02.407 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 30.11.2022 16:41:02.424 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (17ms).
+dbug: 30.11.2022 16:41:02.425 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.427 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.507 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.510 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 16:41:02.512 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 30.11.2022 16:41:02.513 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 30.11.2022 16:41:02.515 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 16:41:02.525 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 16:41:02.526 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.529 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (1ms).
+dbug: 30.11.2022 16:41:02.531 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 16:41:02.531 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:41:02.531 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:41:02.531 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.531 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.531 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 16:41:02.540 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 16:41:02.540 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.540 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 16:41:02.541 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.541 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.541 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 16:41:02.541 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:41:02.541 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:41:02.541 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 30.11.2022 16:41:02.542 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 30.11.2022 16:41:02.542 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.542 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+dbug: 30.11.2022 16:41:02.548 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 30.11.2022 16:41:02.548 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 16:41:02.548 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 30.11.2022 16:41:02.548 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.548 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.548 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 30.11.2022 16:41:02.549 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 30.11.2022 16:41:02.550 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.550 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'StudentsHT3' on server 's-dev-01' is being disposed after spending 0ms reading results.
+dbug: 30.11.2022 16:41:02.550 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.550 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StudentsHT3' on server 's-dev-01' (0ms).
+info: 30.11.2022 16:41:02.556 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221130133837_AddStudentsInStudentsTable'.
+dbug: 30.11.2022 16:41:02.582 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 6 update commands as a batch.
+dbug: 30.11.2022 16:41:02.587 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.587 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StudentsHT3' on server 's-dev-01'.
+dbug: 30.11.2022 16:41:02.588 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 30.11.2022 16:41:02.591 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 30.11.2022 16:41:02.591 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 16:41:02.591 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:41:02.592 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:41:02.592 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'FirstName', N'LastName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Students]'))
+          SET IDENTITY_INSERT [Students] ON;
+      INSERT INTO [Students] ([Id], [BirthDate], [FirstName], [LastName], [PhoneNumber])
+      VALUES (1, '1990-03-15T00:00:00.0000000', N'Elen', N'Storm', N'+7(929)229-29-29'),
+      (2, '1988-07-13T00:00:00.0000000', N'Mark', N'Tven', N'+7(919)285-87-33'),
+      (3, '2000-09-26T00:00:00.0000000', N'Anton', N'Antonov', N'+7(918)335-35-33'),
+      (4, '2001-06-30T00:00:00.0000000', N'Vikram', N'Smirnov', N'+7(919)288-89-93'),
+      (5, '2005-02-23T00:00:00.0000000', N'Arseniy', N'Papka', N'+7(919)329-21-99'),
+      (6, '2003-12-14T00:00:00.0000000', N'Volodya', N'Doe', N'+7(919)429-33-33');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'FirstName', N'LastName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Students]'))
+          SET IDENTITY_INSERT [Students] OFF;
+info: 30.11.2022 16:41:02.598 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'FirstName', N'LastName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Students]'))
+          SET IDENTITY_INSERT [Students] ON;
+      INSERT INTO [Students] ([Id], [BirthDate], [FirstName], [LastName], [PhoneNumber])
+      VALUES (1, '1990-03-15T00:00:00.0000000', N'Elen', N'Storm', N'+7(929)229-29-29'),
+      (2, '1988-07-13T00:00:00.0000000', N'Mark', N'Tven', N'+7(919)285-87-33'),
+      (3, '2000-09-26T00:00:00.0000000', N'Anton', N'Antonov', N'+7(918)335-35-33'),
+      (4, '2001-06-30T00:00:00.0000000', N'Vikram', N'Smirnov', N'+7(919)288-89-93'),
+      (5, '2005-02-23T00:00:00.0000000', N'Arseniy', N'Papka', N'+7(919)329-21-99'),
+      (6, '2003-12-14T00:00:00.0000000', N'Volodya', N'Doe', N'+7(919)429-33-33');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'FirstName', N'LastName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Students]'))
+          SET IDENTITY_INSERT [Students] OFF;
+dbug: 30.11.2022 16:41:02.598 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 30.11.2022 16:41:02.598 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:41:02.598 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 30.11.2022 16:41:02.598 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20221130133837_AddStudentsInStudentsTable', N'7.0.0');
+info: 30.11.2022 16:41:02.599 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] 

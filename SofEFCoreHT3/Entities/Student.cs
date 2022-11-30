@@ -23,7 +23,5 @@ namespace EF_HW2.Entities
         /// Навигационное свойство
         /// </summary>
         public Card? Card { get; set; }
-
-
     }
 }

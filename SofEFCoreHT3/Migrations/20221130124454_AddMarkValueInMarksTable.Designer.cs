@@ -12,8 +12,8 @@ using SofEFCoreHT3;
 namespace SofEFCoreHT3.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20221129143828_InitMigration")]
-    partial class InitMigration
+    [Migration("20221130124454_AddMarkValueInMarksTable")]
+    partial class AddMarkValueInMarksTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -73,6 +73,93 @@ namespace SofEFCoreHT3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Marks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            MarkValue = 7.0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            MarkValue = 8.0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            MarkValue = 3.0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            MarkValue = 10.0
+                        },
+                        new
+                        {
+                            Id = 5,
+                            MarkValue = 12.0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            MarkValue = 10.0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            MarkValue = 5.0
+                        },
+                        new
+                        {
+                            Id = 8,
+                            MarkValue = 9.0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            MarkValue = 12.0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            MarkValue = 7.0
+                        },
+                        new
+                        {
+                            Id = 11,
+                            MarkValue = 8.0
+                        },
+                        new
+                        {
+                            Id = 12,
+                            MarkValue = 6.0
+                        },
+                        new
+                        {
+                            Id = 13,
+                            MarkValue = 10.0
+                        },
+                        new
+                        {
+                            Id = 14,
+                            MarkValue = 11.0
+                        },
+                        new
+                        {
+                            Id = 15,
+                            MarkValue = 1.0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            MarkValue = 10.0
+                        },
+                        new
+                        {
+                            Id = 17,
+                            MarkValue = 8.0
+                        });
                 });
 
             modelBuilder.Entity("EF_HW2.Entities.Student", b =>

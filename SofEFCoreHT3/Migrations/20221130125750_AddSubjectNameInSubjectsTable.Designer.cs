@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SofEFCoreHT3;
 
@@ -11,9 +12,11 @@ using SofEFCoreHT3;
 namespace SofEFCoreHT3.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20221130125750_AddSubjectNameInSubjectsTable")]
+    partial class AddSubjectNameInSubjectsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -182,62 +185,11 @@ namespace SofEFCoreHT3.Migrations
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasMaxLength(16)
-                        .HasColumnType("nvarchar(16)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Students");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BirthDate = new DateTime(1990, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Elen",
-                            LastName = "Storm",
-                            PhoneNumber = "+7(929)229-29-29"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BirthDate = new DateTime(1988, 7, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Mark",
-                            LastName = "Tven",
-                            PhoneNumber = "+7(919)285-87-33"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            BirthDate = new DateTime(2000, 9, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Anton",
-                            LastName = "Antonov",
-                            PhoneNumber = "+7(918)335-35-33"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            BirthDate = new DateTime(2001, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Vikram",
-                            LastName = "Smirnov",
-                            PhoneNumber = "+7(919)288-89-93"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            BirthDate = new DateTime(2005, 2, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Arseniy",
-                            LastName = "Papka",
-                            PhoneNumber = "+7(919)329-21-99"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            BirthDate = new DateTime(2003, 12, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Volodya",
-                            LastName = "Doe",
-                            PhoneNumber = "+7(919)429-33-33"
-                        });
                 });
 
             modelBuilder.Entity("EF_HW2.Entities.Subject", b =>

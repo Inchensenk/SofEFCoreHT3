@@ -26,7 +26,7 @@ namespace EF_HW2.Entities.Configurations
                    .IsRequired();
 
             builder.Property(s => s.PhoneNumber)
-                   .IsRequired();
+                   .IsRequired().HasMaxLength(16);
 
             builder.HasOne(s=>s.Card)
                    .WithOne(s=>s.Student)

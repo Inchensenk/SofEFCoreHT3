@@ -13,6 +13,8 @@ namespace EF_HW2.Entities.Configurations
         public void Configure(EntityTypeBuilder<Mark> builder)
         {
            builder.HasKey(m => m.Id);
+
+            
         }
     }
 }

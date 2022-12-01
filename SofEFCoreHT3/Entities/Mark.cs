@@ -14,6 +14,8 @@ namespace EF_HW2.Entities
 
         public double MarkValue { get; set; }
 
-        
+        public Subject? Subject { get; set; }
+
+        public Card? Card { get; set; }
     }
 }

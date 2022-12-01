@@ -15,11 +15,16 @@ namespace EF_HW2.Entities
         [Required]
         public string SubjectName { get; set; } = null!;
 
+        public int CardId { get; set; }
+
         public List<Card> Cards { get; set; }
+
+        public List<Mark> Marks { get; set; }
 
         public Subject()
         {
             Cards= new List<Card>();
+            Marks= new List<Mark>();
         }
     }
 }

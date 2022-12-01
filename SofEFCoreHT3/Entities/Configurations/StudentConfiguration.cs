@@ -31,6 +31,8 @@ namespace EF_HW2.Entities.Configurations
             builder.HasOne(s=>s.Card)
                    .WithOne(s=>s.Student)
                    .HasForeignKey<Card>(c=>c.SerialNumber);
+
+
             
         }
     }

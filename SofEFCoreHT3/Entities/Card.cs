@@ -12,15 +12,19 @@ namespace EF_HW2.Entities
 
         public int SerialNumber { get; set; } 
 
+        public int SubjectId { get; set; }
+
         /// <summary>
         /// Навигационное свойство
         /// </summary>
         public Student? Student { get; set; }
 
         public List<Subject> Subjects { get; set; }
+        public List<Mark> Marks { get; set;  }
         public Card()
         {
             Subjects = new List<Subject>();
+            Marks = new List<Mark>();
         }
     }
 }

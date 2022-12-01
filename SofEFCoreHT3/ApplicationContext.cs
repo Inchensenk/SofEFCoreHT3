@@ -76,6 +76,11 @@ namespace SofEFCoreHT3
             modelBuilder.Entity<Student>().HasData(new Student { Id = 5, FirstName = "Arseniy", LastName = "Papka", BirthDate = DateTime.Parse("2005-02-23"), PhoneNumber = "+7(919)329-21-99" });
             modelBuilder.Entity<Student>().HasData(new Student { Id = 6, FirstName = "Volodya", LastName = "Doe", BirthDate = DateTime.Parse("2003-12-14"), PhoneNumber = "+7(919)429-33-33" });
         }
+        protected void OnRelationsSetting(ModelBuilder modelBuilder)
+        {
+
+        }
+
         public override async ValueTask DisposeAsync()
         {
             await base.DisposeAsync();

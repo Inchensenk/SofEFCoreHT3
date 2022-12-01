@@ -11,11 +11,14 @@ namespace EF_HW2.Entities
     {
         
         public int Id { get; set; }
-
         public double MarkValue { get; set; }
 
+
+        public int SubjectId { get; set; }
         public Subject? Subject { get; set; }
 
+
+        public int CardId { get; set; }
         public Card? Card { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SofEFCoreHT3.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,8 @@ namespace EF_HW2.Entities
         /// Навигационное свойство
         /// </summary>
         public Student? Student { get; set; }
+
+
 
         public List<Subject> Subjects { get; set; }
         public List<Mark> Marks { get; set;  }

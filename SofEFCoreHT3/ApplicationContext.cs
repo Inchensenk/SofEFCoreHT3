@@ -2,11 +2,10 @@
 using EF_HW2.Entities.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using SofEFCoreHT3.Entities;
+using SofEFCoreHT3.Entities.Configurations;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SofEFCoreHT3
@@ -18,13 +17,15 @@ namespace SofEFCoreHT3
         public DbSet<Card> Cards { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Mark> Marks { get; set; }
-        public DbSet<Subject> Subjects { get; set; }    
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Enrollment> Enrollments { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer(@"Data Source = s-dev-01;Database=StudentsHT3;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Data Source = c-dev-01;Database=StudentsHT3;Trusted_Connection=True;");
             //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            optionsBuilder.UseSqlServer(@"Data Source=s-dev-01; Database=StudentsHT3; Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //optionsBuilder.UseSqlServer(@"Data Source=c-dev-01; Database=StudentsHT3; Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             optionsBuilder.LogTo(logStream.WriteLine, LogLevel.Trace);//запись лога в файл
         }
 
@@ -34,10 +35,15 @@ namespace SofEFCoreHT3
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
             modelBuilder.ApplyConfiguration(new SubjectConfiguration());
             modelBuilder.ApplyConfiguration(new MarkConfiguration());
+            modelBuilder.ApplyConfiguration(new EnrollmentConfiguration());
             OnMarksCreated(modelBuilder);
             OnSubjectsCreated(modelBuilder);
             OnStudentsCreated(modelBuilder);
+            //OnSubjectConfigurations(modelBuilder);
+            //OnCardsConfigurations(modelBuilder);
+            //OnStudentsConfigurations(modelBuilder);
         }
+
 
         protected void OnMarksCreated(ModelBuilder modelBuilder)
         {
@@ -58,11 +64,13 @@ namespace SofEFCoreHT3
             modelBuilder.Entity<Mark>().HasData(new Mark { Id = 15, MarkValue = 1 });
             modelBuilder.Entity<Mark>().HasData(new Mark { Id = 16, MarkValue = 10 });
             modelBuilder.Entity<Mark>().HasData(new Mark { Id = 17, MarkValue = 8 });
+
+            
         }
 
         protected void OnSubjectsCreated(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Subject>().HasData(new Subject {Id=1, SubjectName= "Maths" });
+            modelBuilder.Entity<Subject>().HasData(new Subject { Id = 1, SubjectName = "Maths" });
             modelBuilder.Entity<Subject>().HasData(new Subject { Id = 2, SubjectName = "Informatics" });
             modelBuilder.Entity<Subject>().HasData(new Subject { Id = 3, SubjectName = "Algorithms and data structure" });
         }
@@ -76,10 +84,22 @@ namespace SofEFCoreHT3
             modelBuilder.Entity<Student>().HasData(new Student { Id = 5, FirstName = "Arseniy", LastName = "Papka", BirthDate = DateTime.Parse("2005-02-23"), PhoneNumber = "+7(919)329-21-99" });
             modelBuilder.Entity<Student>().HasData(new Student { Id = 6, FirstName = "Volodya", LastName = "Doe", BirthDate = DateTime.Parse("2003-12-14"), PhoneNumber = "+7(919)429-33-33" });
         }
-        protected void OnRelationsSetting(ModelBuilder modelBuilder)
-        {
 
-        }
+        //protected void OnSubjectConfigurations(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Subject>().HasIndex(s=>s.SubjectName).IsUnique();
+        //}
+
+        //public void OnCardsConfigurations(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Card>().HasIndex(c => c.SerialNumber).IsUnique();
+        //}
+
+        //public void OnStudentsConfigurations(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Student>().HasIndex(s => s.PhoneNumber).IsUnique();
+        //}
+
 
         public override async ValueTask DisposeAsync()
         {

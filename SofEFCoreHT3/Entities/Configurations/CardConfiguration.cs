@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,7 @@ namespace EF_HW2.Entities.Configurations
 {
     public class CardConfiguration : IEntityTypeConfiguration<Card>
     {
+
         public void Configure(EntityTypeBuilder<Card> builder)
         {
             builder.HasKey(c => c.Id);
@@ -20,5 +23,7 @@ namespace EF_HW2.Entities.Configurations
             //builder.HasAlternateKey(c=>c.SerialNumber);
 
         }
+
+
     }
 }

@@ -22,10 +22,6 @@ namespace EF_HW2.Entities.Configurations
              * Если не задавать название таблицы явно, то Entity Framework Core автомотически создаст таблицу с составным названием из связанных сущностей
              */
             builder.HasMany(c => c.Cards).WithMany(s => s.Subjects).UsingEntity(cs=>cs.ToTable("Enrollments"));
-
-            
-
-            
         }
     }
 }
